@@ -1,0 +1,90 @@
+/* General Styles for the Upload Component */
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for clean look */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 40px;
+  }
+  
+  /* Heading Style */
+  .upload-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Label Style */
+  .upload-container label {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+  
+  /* Input Styles */
+  .upload-container select,
+  .upload-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .upload-container select:focus,
+  .upload-container input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+  }
+  
+  /* Button Style */
+  .upload-container button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .upload-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .upload-container {
+      padding: 15px;
+    }
+  
+    .upload-container h2 {
+      font-size: 20px;
+    }
+  
+    .upload-container input,
+    .upload-container select {
+      font-size: 14px;
+    }
+  
+    .upload-container button {
+      font-size: 14px;
+    }
+  }
+  

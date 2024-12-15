@@ -1,0 +1,160 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4faff; /* Soft blue for a student-friendly theme */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #0056b3; /* Bright blue for headings */
+    font-size: 28px;
+  }
+  
+  /* Branch List Styling */
+  .courses-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .course-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .branch-name {
+    padding: 15px;
+    background-color: #0056b3; /* Bright blue */
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .branch-name:hover {
+    background-color: #003f87; /* Darker blue on hover */
+  }
+  
+  hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Semester List Styling */
+  .semesters-list {
+    list-style: none;
+    padding: 10px 15px;
+    background-color: #f7f9fc; /* Light background for semesters */
+  }
+  
+  .semester-item {
+    padding: 10px 15px;
+    margin: 5px 0;
+    background: #eef2f7; /* Very light blue for semester items */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .semester-item.active {
+    background-color: #0056b3;
+    color: #ffffff;
+    transform: scale(1.02);
+  }
+  
+  .semester-item:hover {
+    background-color: #cce4ff; /* Highlight on hover */
+  }
+  
+  /* Resource Section Styling */
+  .resources-section {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resources-section h3 {
+    font-size: 20px;
+    color: #0056b3;
+    margin-bottom: 10px;
+  }
+  
+  .resources-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .resources-section li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .resources-section li:last-child {
+    border-bottom: none;
+  }
+  
+  .resources-section p {
+    margin: 0;
+  }
+  
+  .resources-section a {
+    background-color: #28a745; /* Green button for download */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resources-section a:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .courses-list {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .branch-name {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .semester-item {
+      font-size: 14px;
+    }
+  
+    .resources-section h3 {
+      font-size: 18px;
+    }
+  
+    .resources-section a {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  

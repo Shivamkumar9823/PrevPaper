@@ -1,0 +1,61 @@
+/* General Styles for Register */
+.register-container {
+    padding: 20px;
+    background-color: #f7f8fc;
+    font-family: 'Arial', sans-serif;
+    
+  }
+  
+  h2 {
+    font-size: 32px;
+    color: #1f4e79;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .register_input {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stacks input elements vertically */
+    width: 100%;
+    max-width: 400px; /* Limit the width for better presentation */
+    margin: 0 auto; /* Centers the form container */
+    padding: 20px;
+    background-color: #ffffff; /* Optional: add a background color */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for a modern look */
+  }
+  
+
+  .register_input input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+  }
+  .register_input button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register_input button:hover {
+    background-color: #034892;
+  }
+  .register_input input[type="text"]:focus,
+  .register_input input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
