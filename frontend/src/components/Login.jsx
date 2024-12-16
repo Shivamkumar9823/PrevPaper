@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../context/UserContext';
 import './Login.css';
 
 const Login = () => {
   const [enrollment, setEnrollment] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  const { setUser } = useContext(UserContext);
+
+
 
   const handleLogin = async () => {
     try {
@@ -15,8 +19,10 @@ const Login = () => {
         password,
       });
       localStorage.setItem('token', res.data.token);
+      console.log(res)
+      setUser(res.data.name);
       alert('Login successful');
-      navigate('/dashboard');
+      navigate('/');
     } catch (error) {
       console.error(error);
       alert('Login failed');
